@@ -24,6 +24,15 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-5xl"
         >
+          <motion.div
+            className="mb-4 text-sm uppercase tracking-[0.3em] text-primary font-semibold"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+          >
+            LiftUp
+          </motion.div>
+
           <motion.h1
             className="mb-6 text-6xl font-bold leading-tight tracking-tight md:text-8xl lg:text-9xl"
             initial={{ opacity: 0, scale: 0.9 }}
